@@ -1,1 +1,1 @@
-# sisyphus-demo
+DEMO
