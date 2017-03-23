@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.rongcapital</groupId>
 	<artifactId>sisyphus-demo</artifactId>
@@ -10,7 +11,7 @@
 		<spring.version>4.3.4.RELEASE</spring.version>
 		<guava.version>20.0</guava.version>
 		<jbehave.site.resources.version>3.1.1</jbehave.site.resources.version>
-		<sisyphus.version>2.0.0-RELEASE</sisyphus.version>
+		<sisyphus.version>2.1.2-SNAPSHOT</sisyphus.version>
 	</properties>
 
 	<dependencies>
@@ -59,6 +60,13 @@
 			<artifactId>jbehave-site-resources</artifactId>
 			<version>${jbehave.site.resources.version}</version>
 			<type>zip</type>
+		</dependency>
+
+		<!-- ssh -->
+		<dependency>
+			<groupId>ch.ethz.ganymed</groupId>
+			<artifactId>ganymed-ssh2</artifactId>
+			<version>build210</version>
 		</dependency>
 
 	</dependencies>

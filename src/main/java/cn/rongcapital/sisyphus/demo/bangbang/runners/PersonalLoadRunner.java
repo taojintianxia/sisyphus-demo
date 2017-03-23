@@ -1,4 +1,4 @@
-package cn.rongcapital.sisyphus.demo.jd.runners;
+package cn.rongcapital.sisyphus.demo.bangbang.runners;
 
 import static java.util.Arrays.asList;
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
@@ -14,17 +14,17 @@ import cn.rongcapital.sisyphus.base.BaseRunner;
  * 
  */
 
-public class JDDemoRunner extends BaseRunner {
+public class PersonalLoadRunner extends BaseRunner {
 
     @Override
     public String[] getStepsBasePackages() {
-        return new String[] {"cn.rongcapital.sisyphus.demo.jd.steps"};
+        return new String[] {"cn.rongcapital.sisyphus.demo.bangbang.steps"};
     }
 
     @Override
     public List<String> storyPaths() {
         String codeLocation = codeLocationFromClass(this.getClass()).getFile();
-        return new StoryFinder().findPaths(codeLocation, asList("**/stories/**/jddemo.story"), asList(""));
+        return new StoryFinder().findPaths(codeLocation, asList("**/stories/**/personal_loan.story"), asList(""));
     }
 
 }
